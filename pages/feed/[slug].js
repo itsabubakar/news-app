@@ -31,7 +31,7 @@ export const Feed =  ({ articles, pageNumber }) => {
             <p>#{pageNumber}</p>
             <div
             onClick={()=> {
-                if(pageNumber > 1) {
+                if(pageNumber >= 1) {
                     router.push(`/feed/${pageNumber + 1}`)
                 }
             }}    
